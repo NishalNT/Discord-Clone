@@ -3,7 +3,7 @@ import { NextApiResponse } from "next";
 import { Server as SocketIOServer } from "socket.io";
 import { Member, Server,Profile } from "@prisma/client"
 
-export type ServerWithMembersWithProfiles = Server & {
+export type ServerWIthMembersWithProfiles = Server & {
     members: (Member & { profile: Profile })[];
 };
 
